@@ -112,7 +112,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     overflow: 'auto',
     flexDirection: 'column',
-    marginLeft: '275px',
+
   },
   fixedHeight: {
     height: 240,
@@ -177,11 +177,11 @@ export default function Dashboard() {
       </Drawer>
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
-        <Container maxWidth="lg" className={classes.container}>
+        <Container maxWidth="md" className={classes.container}>
           <Grid container spacing={4}>
 
-            <Grid item xs={12} md={8} lg={9}>
-              <Paper className={fixedHeightPaper}>
+            <Grid item xs={12} md={12} lg={12}>
+              <Paper elevation={3} className={fixedHeightPaper}>
                 <Forecast />
               </Paper>
             </Grid>
