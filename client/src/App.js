@@ -7,8 +7,6 @@ function App() {
   return (
     <div className="App">
       <Dashboard />
-      {/* <img src={logo} className="App-logo" alt="logo" />
-      <h1> Dynamic Weather Widget </h1> */}
     </div>
   );
 }
