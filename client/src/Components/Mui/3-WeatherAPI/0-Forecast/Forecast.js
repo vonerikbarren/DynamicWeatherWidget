@@ -50,7 +50,7 @@ const Forecast = () => {
 
   return (
     <div>
-      <h2>Find Current Weather Conditions</h2>
+      <h2>Search for Current Weather Conditions</h2>
       <form onSubmit={getForecast}>
         <input
           type="text"
@@ -60,7 +60,7 @@ const Forecast = () => {
           value={city}
           onChange={(e) => setCity(e.target.value)}
         />
-        <label className={classes.Radio}>
+        <label className="Radio">
           <input
             type="radio"
             name="units"
@@ -70,7 +70,7 @@ const Forecast = () => {
           />
                     Fahrenheit
                 </label>
-        <label className={classes.Radio}>
+        <label className="Radio">
           <input
             type="radio"
             name="units"
@@ -81,7 +81,7 @@ const Forecast = () => {
                     Celcius
                 </label>
 
-        <button className={classes.Button} type="submit">Get Forecast</button>
+        <button className="Button" type="submit">Get Forecast</button>
       </form>
       <Conditions
         responseObj={responseObj}
